@@ -15,6 +15,7 @@ namespace M101DotNet.WebApp.Models
         // must follow. Make sure to include Name and Email properties.
         public string Name { get; set; }
         public string Email { get; set; }
-        public ObjectId _id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
     }
 }

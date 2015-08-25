@@ -37,5 +37,10 @@ namespace M101DotNet.WebApp.Models
         {
             get { return _database.GetCollection<User>(USERS_COLLECTION_NAME); }
         }
+
+        public IMongoCollection<Post> Posts
+        {
+            get { return _database.GetCollection<Post>(POSTS_COLLECTION_NAME); }
+        }
     }
 }
